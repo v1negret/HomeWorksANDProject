@@ -8,8 +8,8 @@ namespace TO_DO_BOT
 {
     internal class Program
     {
-        private static readonly string _botKey = "5588332666:AAH3fl14HdbgBK8ggp7_OSZy0tp3fxqbulI";
-        public static Dictionary<string, UserState> _users = new();
+        private static readonly string _botKey = System.IO.File.ReadAllText(@"C:\tgBot\BotKey.txt");
+        public static Dictionary<string, UserState> Users = new();
         static async Task Main(string[] args)
 
         {
@@ -32,11 +32,11 @@ namespace TO_DO_BOT
         private static async Task HandleUpdateAsync(ITelegramBotClient bot, Update update, CancellationToken cancellationToken)
         {
             var username = update.Message.Chat.Username;
-            if (!_users.ContainsKey(username))
+            if (!Users.ContainsKey(username))
             {
-                _users.Add(username, new UserState());
+                Users.Add(username, new UserState());
             }
-            var state = _users[username];
+            var state = Users[username];
             if (update.Type != Telegram.Bot.Types.Enums.UpdateType.Message)
                 return;
 
@@ -62,19 +62,19 @@ namespace TO_DO_BOT
 
                 case "зарегестрироваться":
 
-                    _users[username].IsRegisterButtonClicked = true;
+                    Users[username].IsRegisterButtonClicked = true;
                     await bot.SendTextMessageAsync(message.Chat.Id, "Введите пароль следующим сообщением", replyMarkup: new ReplyKeyboardRemove());
                     break;
 
                 case "войти":
 
-                    _users[username].NeedsLogIn = true;
+                    Users[username].NeedsLogIn = true;
                     await bot.SendTextMessageAsync(message.Chat.Id, "Введите пароль следующим сообщением", replyMarkup: new ReplyKeyboardRemove());
                     break;
 
                 default:
 
-                    if (_users[username].IsRegisterButtonClicked)
+                    if (Users[username].IsRegisterButtonClicked)
                     {
                         AuthKeyboard = new ReplyKeyboardMarkup(new[]
                         {
@@ -88,19 +88,19 @@ namespace TO_DO_BOT
                         var password = message.Text;
                         if (await UserRepository.Register(username, password))
                         {
-                            _users[username].IsRegisterButtonClicked = false;
+                            Users[username].IsRegisterButtonClicked = false;
                             await bot.SendTextMessageAsync(message.Chat.Id, "Ура, вы успешно зарегестрировались! Осталось лишь войти в свой аккаунт!", replyMarkup: AuthKeyboard);
                         }
                         else
                         {
-                            _users[username].IsRegisterButtonClicked = false;
+                            Users[username].IsRegisterButtonClicked = false;
                             await bot.SendTextMessageAsync(message.Chat.Id, "Пользователь с вашим именем пользователя уже зарегестрирован!", replyMarkup: AuthKeyboard);
                         }
 
 
                     }
 
-                    if (_users[username].NeedsLogIn)
+                    if (Users[username].NeedsLogIn)
                     {
 
                         var password = message.Text;
@@ -131,48 +131,48 @@ namespace TO_DO_BOT
                             AuthKeyboard.ResizeKeyboard = true;
                             await bot.SendTextMessageAsync(message.Chat.Id, "Вы ввели неверный пароль, либо вы ещё не зарегестрированы.", replyMarkup: AuthKeyboard);
                         }
-                        _users[username].NeedsLogIn = false;
-                        _users[username].IsActive = true;
+                        Users[username].NeedsLogIn = false;
+                        Users[username].IsActive = true;
 
                     }
 
-                    if (_users[username].AddTask == true)
+                    if (Users[username].AddTask == true)
                     {
 
-                        UserRepository.AddTaskAsync(UserRepository.GetUserId(username), message.Text);
+                        UserRepository.AddTaskAsync(UserRepository.GetUserId(username).Result, message.Text);
                         await bot.SendTextMessageAsync(message.Chat.Id, "Вы успешно дабавили задачу");
-                        _users[username].AddTask = false;
+                        Users[username].AddTask = false;
 
                     }
 
-                    if (_users[username].IsActive && message.Text == "Добавить задачу")
+                    if (Users[username].IsActive && message.Text == "Добавить задачу")
                     {
 
-                        bot.SendTextMessageAsync(message.Chat.Id, "Введите текст задачи, которую хотите добавить");
-                        _users[username].AddTask = true;
+                        await bot.SendTextMessageAsync(message.Chat.Id, "Введите текст задачи, которую хотите добавить");
+                        Users[username].AddTask = true;
 
                     }
 
-                    if (_users[username].RemoveTask == true)
+                    if (Users[username].RemoveTask == true)
                     {
 
-                        await UserRepository.RemoveTaskAsync(UserRepository.GetUserId(username), message.Text);
-                        _users[username].RemoveTask = false;
+                        await UserRepository.RemoveTaskAsync(UserRepository.GetUserId(username).Result, message.Text);
+                        Users[username].RemoveTask = false;
 
                     }
 
-                    if (_users[username].IsActive && message.Text == "Удалить задачу")
+                    if (Users[username].IsActive && message.Text == "Удалить задачу")
                     {
 
-                        _users[username].RemoveTask = true;
+                        Users[username].RemoveTask = true;
                         await bot.SendTextMessageAsync(message.Chat.Id, "Введите текст задачи, которую хотите удалить");
 
                     }
                     
-                    if (_users[username].IsActive && message.Text == "Доступные задачи")
+                    if (Users[username].IsActive && message.Text == "Доступные задачи")
                     {
 
-                        var tasks = await UserRepository.GetAllTasksAsync(UserRepository.GetUserId(username));
+                        var tasks = await UserRepository.GetAllTasksAsync(UserRepository.GetUserId(username).Result);
                         string tasksString = "Вам доступны следующие задачи: \n";
                         foreach (var task in tasks)
                         {
@@ -182,8 +182,6 @@ namespace TO_DO_BOT
 
 
                     }
-
-
 
                     break;
             }

@@ -11,12 +11,12 @@ namespace TO_DO_BOT
     public class UserRepository
     {
 
-        private static string ConnectionString = "Host=localhost;Port=5432;Database=To-do-DB;Username=postgres;Password=root";
+        private static readonly string _connectionString = System.IO.File.ReadAllText(@"C:\tgBot\ConString.txt");
 
         public static async Task<bool> Register(string name, string password)
         {
 
-            using (var conn = new NpgsqlConnection(ConnectionString))
+            await using (var conn = new NpgsqlConnection(_connectionString))
             {
                 var existsSql = $"SELECT username FROM users WHERE username LIKE '%{name}%'";
                 var query = conn.Query<string>(existsSql).FirstOrDefault();
@@ -36,7 +36,7 @@ namespace TO_DO_BOT
         }
         public static async Task<bool> Login(string name, string password)
         {
-            using (var conn = new NpgsqlConnection(ConnectionString))
+            await using (var conn = new NpgsqlConnection(_connectionString))
             {
                 if (name != null && password != null)
                 {
@@ -55,7 +55,7 @@ namespace TO_DO_BOT
         }
         public static async Task AddTaskAsync(int userId, string task)
         {
-            using (var conn = new NpgsqlConnection(ConnectionString))
+            await using (var conn = new NpgsqlConnection(_connectionString))
             {
                 var sql = $"INSERT INTO users_tasks (user_id, task) VALUES ({userId}, '{task}')";  
                 await conn.QueryAsync(sql);
@@ -63,7 +63,7 @@ namespace TO_DO_BOT
         }
         public static async Task RemoveTaskAsync(int userId, string task)
         {
-            using (var conn = new NpgsqlConnection(ConnectionString))
+            await using (var conn = new NpgsqlConnection(_connectionString))
             {
                 var sql = $"DELETE FROM users_tasks WHERE user_id = {userId} AND task LIKE '%{task}%'";
                 await conn.QueryAsync(sql);
@@ -72,7 +72,7 @@ namespace TO_DO_BOT
         public static async Task<List<string>> GetAllTasksAsync(int userId)
         {
             List<string> allTasks = new();
-            using (var conn = new NpgsqlConnection(ConnectionString))
+            await using (var conn = new NpgsqlConnection(_connectionString))
             {
                 var sql = $"SELECT task FROM users_tasks WHERE user_id = {userId}";
                 List<string> tasks = (List<string>) await conn.QueryAsync<string>(sql);
@@ -84,9 +84,9 @@ namespace TO_DO_BOT
                 return allTasks;
             }
         }
-        public static int GetUserId(string username)
+        public static async Task<int> GetUserId(string username)
         {
-            using(var conn = new NpgsqlConnection(ConnectionString))
+            await using(var conn = new NpgsqlConnection(_connectionString))
             {
                 var sql = $"SELECT id FROM users WHERE username LIKE '%{username}%'";
                 var userId = conn.Query<int>(sql).FirstOrDefault();
