@@ -1,0 +1,15 @@
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\bin\Debug\net6.0\Trees-HW.exe
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\bin\Debug\net6.0\Trees-HW.deps.json
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\bin\Debug\net6.0\Trees-HW.runtimeconfig.json
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\bin\Debug\net6.0\Trees-HW.dll
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\bin\Debug\net6.0\Trees-HW.pdb
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\obj\Debug\net6.0\Trees-HW.csproj.AssemblyReference.cache
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\obj\Debug\net6.0\Trees-HW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\obj\Debug\net6.0\Trees-HW.AssemblyInfoInputs.cache
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\obj\Debug\net6.0\Trees-HW.AssemblyInfo.cs
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\obj\Debug\net6.0\Trees-HW.csproj.CoreCompileInputs.cache
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\obj\Debug\net6.0\Trees-HW.dll
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\obj\Debug\net6.0\refint\Trees-HW.dll
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\obj\Debug\net6.0\Trees-HW.pdb
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\obj\Debug\net6.0\Trees-HW.genruntimeconfig.cache
+C:\Users\maksb\Рабочий стол\otus\Trees-HW\obj\Debug\net6.0\ref\Trees-HW.dll

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "gPZxKBXSbOyHwF18A1JHmbF4G0QI+TRYn7tkZGryNVW0K4/FTpL/XfoelN7c0fHViVTC1gwLVuBFYxYy+f8g8g==",
+  "success": true,
+  "projectFilePath": "D:\\VS Projects\\TO-DO-BOT\\TO-DO-BOT\\TO-DO-BOT.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maksb\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\maksb\\.nuget\\packages\\linq2db\\4.1.0\\linq2db.4.1.0.nupkg.sha512",
+    "C:\\Users\\maksb\\.nuget\\packages\\linq2db.postgresql\\4.1.0\\linq2db.postgresql.4.1.0.nupkg.sha512",
+    "C:\\Users\\maksb\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\maksb\\.nuget\\packages\\npgsql\\6.0.5\\npgsql.6.0.5.nupkg.sha512",
+    "C:\\Users\\maksb\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\maksb\\.nuget\\packages\\telegram.bot\\18.0.0\\telegram.bot.18.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

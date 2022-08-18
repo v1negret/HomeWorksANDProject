@@ -1,0 +1,15 @@
+D:\VS Projects\FileManagement\FileManagement\bin\Debug\net6.0\FileManagement.exe
+D:\VS Projects\FileManagement\FileManagement\bin\Debug\net6.0\FileManagement.deps.json
+D:\VS Projects\FileManagement\FileManagement\bin\Debug\net6.0\FileManagement.runtimeconfig.json
+D:\VS Projects\FileManagement\FileManagement\bin\Debug\net6.0\FileManagement.dll
+D:\VS Projects\FileManagement\FileManagement\bin\Debug\net6.0\FileManagement.pdb
+D:\VS Projects\FileManagement\FileManagement\obj\Debug\net6.0\FileManagement.csproj.AssemblyReference.cache
+D:\VS Projects\FileManagement\FileManagement\obj\Debug\net6.0\FileManagement.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS Projects\FileManagement\FileManagement\obj\Debug\net6.0\FileManagement.AssemblyInfoInputs.cache
+D:\VS Projects\FileManagement\FileManagement\obj\Debug\net6.0\FileManagement.AssemblyInfo.cs
+D:\VS Projects\FileManagement\FileManagement\obj\Debug\net6.0\FileManagement.csproj.CoreCompileInputs.cache
+D:\VS Projects\FileManagement\FileManagement\obj\Debug\net6.0\FileManagement.dll
+D:\VS Projects\FileManagement\FileManagement\obj\Debug\net6.0\refint\FileManagement.dll
+D:\VS Projects\FileManagement\FileManagement\obj\Debug\net6.0\FileManagement.pdb
+D:\VS Projects\FileManagement\FileManagement\obj\Debug\net6.0\FileManagement.genruntimeconfig.cache
+D:\VS Projects\FileManagement\FileManagement\obj\Debug\net6.0\ref\FileManagement.dll

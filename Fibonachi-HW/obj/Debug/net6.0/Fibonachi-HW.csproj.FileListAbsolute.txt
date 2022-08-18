@@ -1,0 +1,15 @@
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\bin\Debug\net6.0\Fibonachi-HW.exe
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\bin\Debug\net6.0\Fibonachi-HW.deps.json
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\bin\Debug\net6.0\Fibonachi-HW.runtimeconfig.json
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\bin\Debug\net6.0\Fibonachi-HW.dll
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\bin\Debug\net6.0\Fibonachi-HW.pdb
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\obj\Debug\net6.0\Fibonachi-HW.csproj.AssemblyReference.cache
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\obj\Debug\net6.0\Fibonachi-HW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\obj\Debug\net6.0\Fibonachi-HW.AssemblyInfoInputs.cache
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\obj\Debug\net6.0\Fibonachi-HW.AssemblyInfo.cs
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\obj\Debug\net6.0\Fibonachi-HW.csproj.CoreCompileInputs.cache
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\obj\Debug\net6.0\Fibonachi-HW.dll
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\obj\Debug\net6.0\refint\Fibonachi-HW.dll
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\obj\Debug\net6.0\Fibonachi-HW.pdb
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\obj\Debug\net6.0\Fibonachi-HW.genruntimeconfig.cache
+C:\Users\maksb\Рабочий стол\otus\Fibonachi-HW\obj\Debug\net6.0\ref\Fibonachi-HW.dll

@@ -1,0 +1,131 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TO-DO-BOT/1.0.0": {
+        "dependencies": {
+          "Dapper": "2.0.123",
+          "Npgsql": "6.0.5",
+          "Telegram.Bot": "18.0.0",
+          "linq2db.PostgreSQL": "4.1.0"
+        },
+        "runtime": {
+          "TO-DO-BOT.dll": {}
+        }
+      },
+      "Dapper/2.0.123": {
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.123.33578"
+          }
+        }
+      },
+      "linq2db/4.1.0": {
+        "runtime": {
+          "lib/net6.0/linq2db.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
+        }
+      },
+      "linq2db.PostgreSQL/4.1.0": {
+        "dependencies": {
+          "Npgsql": "6.0.5",
+          "linq2db": "4.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23222"
+          }
+        }
+      },
+      "Npgsql/6.0.5": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.dll": {
+            "assemblyVersion": "6.0.5.0",
+            "fileVersion": "6.0.5.0"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "Telegram.Bot/18.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Telegram.Bot.dll": {
+            "assemblyVersion": "18.0.0.0",
+            "fileVersion": "18.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TO-DO-BOT/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dapper/2.0.123": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+      "path": "dapper/2.0.123",
+      "hashPath": "dapper.2.0.123.nupkg.sha512"
+    },
+    "linq2db/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Dju6pcgxkNnvRt+PoiusMT5vp469aFa/+PwnimhHhkC9cZqInYmutMgjmP7MsnoYQFs9qhWQ4OjWOAxjfNcqGg==",
+      "path": "linq2db/4.1.0",
+      "hashPath": "linq2db.4.1.0.nupkg.sha512"
+    },
+    "linq2db.PostgreSQL/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7e4biDj1ZfBY8Xv2wB+n4BaLVGOStw8zaroVSR1rp9eYhO40HhZevEAmoMrSQ+rO4dyEl0mmrGEvgVxGW678tw==",
+      "path": "linq2db.postgresql/4.1.0",
+      "hashPath": "linq2db.postgresql.4.1.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "path": "newtonsoft.json/12.0.2",
+      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
+    },
+    "Npgsql/6.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a11H5/b5yNTuFN0Ycjvb920oI6vQHadt6KhEMmcC7DfvsSHH8Z3wBam+CHmyWcfDxJJaxamcdBb8XA3BvqS4Kw==",
+      "path": "npgsql/6.0.5",
+      "hashPath": "npgsql.6.0.5.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "Telegram.Bot/18.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BD0UchUXINymCGS+1O1tv2enCRyv+VbSJQAgfnueTZs3j7K4XXyJyW0CgyJleTrqB1oq1hS1ux6gBpi3Ajp+ZQ==",
+      "path": "telegram.bot/18.0.0",
+      "hashPath": "telegram.bot.18.0.0.nupkg.sha512"
+    }
+  }
+}

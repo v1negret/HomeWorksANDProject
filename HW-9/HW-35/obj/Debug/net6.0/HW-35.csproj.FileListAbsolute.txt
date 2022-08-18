@@ -1,0 +1,15 @@
+D:\VS Projects\HW-35\HW-35\bin\Debug\net6.0\HW-35.exe
+D:\VS Projects\HW-35\HW-35\bin\Debug\net6.0\HW-35.deps.json
+D:\VS Projects\HW-35\HW-35\bin\Debug\net6.0\HW-35.runtimeconfig.json
+D:\VS Projects\HW-35\HW-35\bin\Debug\net6.0\HW-35.dll
+D:\VS Projects\HW-35\HW-35\bin\Debug\net6.0\HW-35.pdb
+D:\VS Projects\HW-35\HW-35\obj\Debug\net6.0\HW-35.csproj.AssemblyReference.cache
+D:\VS Projects\HW-35\HW-35\obj\Debug\net6.0\HW-35.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS Projects\HW-35\HW-35\obj\Debug\net6.0\HW-35.AssemblyInfoInputs.cache
+D:\VS Projects\HW-35\HW-35\obj\Debug\net6.0\HW-35.AssemblyInfo.cs
+D:\VS Projects\HW-35\HW-35\obj\Debug\net6.0\HW-35.csproj.CoreCompileInputs.cache
+D:\VS Projects\HW-35\HW-35\obj\Debug\net6.0\HW-35.dll
+D:\VS Projects\HW-35\HW-35\obj\Debug\net6.0\refint\HW-35.dll
+D:\VS Projects\HW-35\HW-35\obj\Debug\net6.0\HW-35.pdb
+D:\VS Projects\HW-35\HW-35\obj\Debug\net6.0\HW-35.genruntimeconfig.cache
+D:\VS Projects\HW-35\HW-35\obj\Debug\net6.0\ref\HW-35.dll

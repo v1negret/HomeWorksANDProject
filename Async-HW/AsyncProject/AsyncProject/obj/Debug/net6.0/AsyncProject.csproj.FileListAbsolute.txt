@@ -1,0 +1,15 @@
+D:\JetBrains\Projects\AsyncProject\AsyncProject\bin\Debug\net6.0\AsyncProject.exe
+D:\JetBrains\Projects\AsyncProject\AsyncProject\bin\Debug\net6.0\AsyncProject.deps.json
+D:\JetBrains\Projects\AsyncProject\AsyncProject\bin\Debug\net6.0\AsyncProject.runtimeconfig.json
+D:\JetBrains\Projects\AsyncProject\AsyncProject\bin\Debug\net6.0\AsyncProject.dll
+D:\JetBrains\Projects\AsyncProject\AsyncProject\bin\Debug\net6.0\AsyncProject.pdb
+D:\JetBrains\Projects\AsyncProject\AsyncProject\obj\Debug\net6.0\AsyncProject.csproj.AssemblyReference.cache
+D:\JetBrains\Projects\AsyncProject\AsyncProject\obj\Debug\net6.0\AsyncProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\JetBrains\Projects\AsyncProject\AsyncProject\obj\Debug\net6.0\AsyncProject.AssemblyInfoInputs.cache
+D:\JetBrains\Projects\AsyncProject\AsyncProject\obj\Debug\net6.0\AsyncProject.AssemblyInfo.cs
+D:\JetBrains\Projects\AsyncProject\AsyncProject\obj\Debug\net6.0\AsyncProject.csproj.CoreCompileInputs.cache
+D:\JetBrains\Projects\AsyncProject\AsyncProject\obj\Debug\net6.0\AsyncProject.dll
+D:\JetBrains\Projects\AsyncProject\AsyncProject\obj\Debug\net6.0\refint\AsyncProject.dll
+D:\JetBrains\Projects\AsyncProject\AsyncProject\obj\Debug\net6.0\AsyncProject.pdb
+D:\JetBrains\Projects\AsyncProject\AsyncProject\obj\Debug\net6.0\AsyncProject.genruntimeconfig.cache
+D:\JetBrains\Projects\AsyncProject\AsyncProject\obj\Debug\net6.0\ref\AsyncProject.dll
